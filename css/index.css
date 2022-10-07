@@ -1,0 +1,107 @@
+nav {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+  position: relative;
+  height: 100px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  font-size: 25px;
+}
+
+li a {
+  color: white;
+}
+li:hover a {
+  color: rgb(255, 36, 36);
+  cursor: pointer;
+}
+
+.header-logo {
+  width: 150px;
+  position: absolute;
+  top: 30px;
+}
+
+.home-hero {
+  height: 100vh;
+  background-image: url("../assets/images/3.png");
+  background-size: cover;
+  background-position: center right;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-hero__btn {
+  background-color: rgb(255, 36, 36);
+  padding: 2px 20px;
+  transition: background-color 0.5s;
+  width: 300px;
+}
+
+.home-hero__btn:hover {
+  background-color: black;
+  padding: 2px 20px;
+  cursor: pointer;
+}
+
+.home-hero__btn a {
+  color: white;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.hero-text {
+  font-size: 100px;
+}
+
+.hero-item-container {
+  padding-top: 150px;
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .header-logo {
+    top: 70px;
+  }
+  .hero-text {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-logo {
+    top: 70px;
+  }
+  .hero-text {
+    font-size: 70px;
+  }
+  ul {
+    font-size: 17px;
+    gap: 20px;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  .hero-text {
+    font-size: 40px;
+  }
+  .hero-item-container {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  .home-hero {
+    height: 80vh;
+  }
+} ;
