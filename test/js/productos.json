@@ -1,5 +1,5 @@
 {
-  "Hamburguesas": [
+  "HAMBURGUESAS": [
     {
       "nombre": "CON QUESO",
       "descripcion": "MEDALLÓN 150 GR., QUESO CHEDDAR, CEBOLLA EN CUBOS, KÉTCHUP Y MOSTAZA.",
@@ -37,7 +37,7 @@
       "precio": 1450
     }
   ],
-  "Fries": [
+  "FRIES": [
     {
       "nombre": "TRADICIONALES",
       "descripcion": "PATAS FRITAS PLANAS",
@@ -63,7 +63,7 @@
       "precio": 900
     }
   ],
-  "Bebidas": [
+  "BEBIDAS": [
     {
       "nombre": "AGUA MINERAL",
       "descripcion": " AGUA MINERAL FRIA / 500ml",

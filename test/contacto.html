@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/styleContacto.css" />
-    <title>Contacto</title>
-  </head>
-  <body>
-    <header>
-      <div class="flex-container header">
-        <div class="box">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/330a31a2d3.js" crossorigin="anonymous"></script>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/styleContacto.css" />
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header>
+    <nav class="flex-container header">
+      <div class="nav-items">
+        <a class="nav_menu" href="./index.html">Inicio</a>
+        <a class="nav_menu" href="./menu.html">Menu</a>
+      </div>
+      <img class="logo" src="./Resources/Images/image2.png" alt="logo de hamburguesa" />
+      <div class="nav-items">
+        <a class="nav_menu" href="./locales.html">Locales</a>
+        <a class="nav_menu contact" href="./contacto.html">Contacto</a>
+      </div>
+    </nav>
+    <div class="btn-hamb"><i class="fa-solid fa-bars"></i></div>
+    <nav class="nav-hamb">
+      <ul class="nav-hamb-ul">
+        <li>
           <a class="nav_menu" href="./index.html">Inicio</a>
+        </li>
+        <li>
           <a class="nav_menu" href="./menu.html">Menu</a>
-        </div>
-        <img
-          class="logo"
-          src="/Resources/Images/image2.png"
-          alt="logo_hamburguesa"
-        />
-        <div class="box">
+        </li>
+        <li>
           <a class="nav_menu" href="./locales.html">Locales</a>
+        </li>
+        <li>
           <a class="nav_menu contact" href="./contacto.html">Contacto</a>
-        </div>
-      </div>
-    </header>
-    <main></main>
-    <footer>
-      <div class="flex-container footer">
-        <img
-          class="logo"
-          src="/Resources/Images/image2.png"
-          alt="logo_hamburguesa"
-        />
-        <p class="copyright">Derechos reservados</p>
-      </div>
-    </footer>
-  </body>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main></main>
+  <footer>
+    <div class="flex-container footer">
+      <img class="logo" src="./Resources/Images/image2.png" alt="logo de hamburguesa" />
+      <p class="copyright">Derechos reservados</p>
+      <p class="copyright dev-names">
+        Desarrollado por Arturo Alexander Rios Robatti - Gonzalo Parada -
+        Julian Correa
+      </p>
+    </div>
+  </footer>
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

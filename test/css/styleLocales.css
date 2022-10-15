@@ -2,3 +2,43 @@
 .locals{
     color: #F9F871;
 }
+
+/* header,
+main,
+footer {
+    margin: 0px;
+} */
+
+main {
+    padding: 0;
+    overflow: hidden;
+}
+
+.locales-hero{
+    width: 100%;
+    height: 800px;
+    background-image: url(../Resources/Images/local-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.text-hero-local{
+    display: flex;
+    height: max-content;
+    position: relative;
+    background-color: rebeccapurple;
+}
+
+.locales-hero-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.404);
+}

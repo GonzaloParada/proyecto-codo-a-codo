@@ -2,7 +2,7 @@ let prodContainer = document.querySelector(".productos-container");
 let filterOption = document.querySelectorAll(".filter-option");
 let menuTitulo = document.querySelector(".menu-titulo");
 
-buscarProductos("Hamburguesas");
+buscarProductos("HAMBURGUESAS");
 
 filterOption.forEach((el) => {
   let nombreFiltro = el.querySelector(".nombre-filtro").textContent;
