@@ -1,3 +1,114 @@
-.home{
-    color: #F9F871;
+/*@media screen and (max-width: 640px){
+    *{
+        visibility: hidden;
+    }
 }
+@media screen and (min-width: 640px) and (max-width: 1280px){
+    *{
+        visibility: hidden;
+    }
+}*/
+
+/*@media screen and (min-width: 1280px){*/
+    .home{
+        color: #F9F871;
+    }
+    
+    .anuncio{
+        margin-top: 40px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+@media screen and (min-width: 640px){
+    .anuncio div{
+        display: inline-block;
+        box-sizing:border-box;
+        width: 50%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .anuncio div{
+        display: inline-block;
+        box-sizing:border-box;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+    .imagen{
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    h1, h2, p{
+    font-size: 30px;
+    text-align: justify;
+    }
+
+    .comprar{
+        background-color: #00283A;
+        border-radius: 10px;
+        padding: 5px 10px;
+        display:inline-block;
+        margin: 50px 0px;
+    }
+    
+    .comprar a{
+        font-size: 40px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .comprar a:hover{
+        color: #F9F871;;
+    }
+    
+    .promo{
+        margin: 50px 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .promo img{
+        max-height: 100px;
+    }
+    
+    .promo div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .promo p{
+        font-size: 25px;
+    }
+    
+    .combo{
+        background-color: #0d76a3a9;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: 2s ease;
+        margin: 15px;
+    }
+    
+    .combo:hover{
+        transform: scale(1.5,1.5);
+    }
+    
+    .combo a img{
+        border-radius: 5px;
+    }
+/*}*/

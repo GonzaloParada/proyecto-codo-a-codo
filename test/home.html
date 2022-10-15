@@ -10,21 +10,23 @@
 </head>
 <body>
     <header>
-        <div class="flex-container header">
-            <div class="box">
-                <a class="nav_menu home" href="/home.html">Inicio</a>
-                <a class="nav_menu" href="/menu.html">Menu</a>
-            </div>
+            <a class="nav_menu home" href="/home.html">Inicio</a>
+            <a class="nav_menu" href="/menu.html">Menu</a>
             <img class="logo" src="/Resources/Images/image2.png" alt="logo de hamburguesa">
-            <div class="box">
-                <a class="nav_menu" href="/locales.html">Locales</a>
-                <a class="nav_menu" href="/contacto.html">Contacto</a>
+            <a class="nav_menu" href="/locales.html">Locales</a>
+            <a class="nav_menu" href="/contacto.html">Contacto</a>
+            <div class="drop_menu">
+                <p>Dropdown Menu</p>
+                <ul>
+                    <li><a class="nav_menu home" href="/home.html">Inicio</a></li>
+                    <li><a class="nav_menu" href="/menu.html">Menu</a></li>
+                    <li><a class="nav_menu" href="/locales.html">Locales</a></li>
+                    <li><a class="nav_menu" href="/contacto.html">Contacto</a></li>
+                </ul>
             </div>
-        </div>
     </header>
     <main>
         <section class="section main">
-            <div>
                 <article>
                     <div class="anuncio">
                         <div>
@@ -33,13 +35,14 @@
                                 es el mas adecuado para por vender al consumidor el alimento que desea comprar por el precio etablecido mutuamente entre el vendedor y el consumidor 
                             </p>
                         </div>
-                        <img class="imagen" src="/Resources/Images/burguer.jpg" alt="imagen de hamburguresa">
+                        <div>
+                            <img class="imagen" src="/Resources/Images/burguer.jpg" alt="imagen de hamburguresa">
+                        </div>
                     </div>
                     <div class="comprar">
                         <a href="/menu.html">Comprar</a>
                     </div>
                 </article>
-            </div>
         </section>
         <section class="section side">
             <div>
@@ -64,10 +67,8 @@
         </section>
     </main>
     <footer>
-        <div class="flex-container footer">
             <img class="logo" src="/Resources/Images/image2.png" alt="logo de hamburguesa">
-            <p class="copyright">Derechos reservados</p>
-        </div>
+            <p>Derechos reservados</p>
     </footer>
 </body>
 </html>

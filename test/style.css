@@ -1,7 +1,3 @@
-*{
-    margin:0;
-}
-
 html{
     background-color: #00283A;
 }
@@ -17,103 +13,104 @@ main{
     color: white;
 }
 
-.logo{
-    height: 90px;
-    margin: 10px 0;
-}
-
-.flex-container{
+header, footer{
     background-color: #001119;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items:center;
     justify-content: space-evenly;
     border-radius: 10px;
 }
 
-.footer{
+@media only screen and (max-width:640px){
+    header > a{
+        display: none;
+    }
+
+    .drop_menu{
+        cursor: pointer;
+        position: relative;
+        color: white;
+        font-size: 20px;
+    }
+
+    .drop_menu ul{
+        position: absolute;
+        top: 50%;
+        list-style: none;
+        font-size: 0px;
+        visibility: hidden;
+        transition: all 0.2s ease-in;
+        padding: 0px;
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        background-color: #1B3753;
+        border-width: 2px 2px 0;
+        border-color: black;
+        border-style: solid;
+    }
+
+    ul li:first-child{
+        border-radius: 5px 5px 0 0;
+        border-width: 2px 2px 0;
+    }
+
+    ul li:last-child{
+        border-radius: 0 0 5px 5px;
+        border-width: 2px;
+    }
+
+    ul a{
+        width: 130px;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+    }
+
+    .drop_menu:hover ul{
+        visibility: visible;
+        font-size: 20px;
+    }
+
+    .drop_menu p{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .nav_menu{
+        display: flex;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav_menu:hover{
+        color: #F9F871;
+    }
+
+    .drop_menu{
+        display: none;
+    }
+}
+
+.logo{
+    height: 90px;
+    margin: 10px 0;
+}
+
+footer{
+    text-align: center;
     justify-content:center;
 }
 
-.nav_menu{
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    margin: 0px 100px;
-}
-
-.copyright{
+footer p{
     color: white;
     font-size: 20px;
     margin: 15px;
-}
-
-.anuncio{
-    margin-top: 40px;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-}
-
-.anuncio div{
-    max-width: 50%;
-}
-
-.anuncio .imagen{
-    max-height: 300px;
-    border-radius: 10px;
-}
-
-h1, h2, p{
-font-size: 30px;
-text-align: justify;
-}
-
-.comprar{
-    background-color: #00283A;
-    border-radius: 10px;
-    padding: 5px 10px;
-    display:inline-block;
-    margin: 50px 0px;
-    position: relative;
-    left: 45%;
-}
-
-.comprar a{
-    font-size: 40px;
-    color: white;
-    text-decoration: none;
-}
-
-.comprar a:hover{
-    color: #F9F871;;
-}
-
-.promo{
-    margin: 50px 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.promo img{
-    max-height: 100px;
-}
-
-.promo div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.promo p{
-    font-size: 25px;
-}
-
-.combo{
-    background-color: #0d76a3a9;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-.combo a img{
-    border-radius: 5px;
 }

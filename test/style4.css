@@ -2,3 +2,13 @@
 .contact{
     color: #F9F871;
 }
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto h1, p, i{
+    padding: 5px;
+}
