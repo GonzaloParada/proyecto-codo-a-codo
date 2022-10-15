@@ -1,4 +1,131 @@
+.menu {
+  color: #f9f871;
+}
 
-.menu{
-    color: #F9F871;
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.filter h2 {
+  text-align: center;
+}
+
+.filter-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-option {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.7s;
+}
+
+.filter-option img {
+  width: 70%;
+}
+
+.filter-option p {
+  font-size: 13px;
+}
+
+.filter-option:hover {
+  background-color: #0d76a3a9;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 40px;
+}
+.menu-section h2 {
+  text-align: center;
+}
+
+.producto-card {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.575);
+}
+
+.producto-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.producto-nombre {
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  z-index: 10;
+}
+
+.producto-descripcion {
+  position: relative;
+  width: 90%;
+  font-size: 15px;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 1.3s;
+}
+
+.producto-precio {
+  position: relative;
+  font-family: "Bebas Neue", cursive;
+  z-index: 10;
+}
+
+.card-hover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(49, 1, 1);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.5s;
+}
+
+.producto-card:hover > .card-hover-bg {
+  opacity: 0.7;
+}
+
+.producto-card:hover > .producto-img {
+  transform: scale(1.1);
+}
+.producto-card:hover > .producto-descripcion {
+  opacity: 1;
+}
+
+.productos-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
