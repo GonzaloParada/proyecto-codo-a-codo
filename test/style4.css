@@ -5,10 +5,159 @@
 
 .contacto{
     display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 50px 0px 100px;
+}
+
+.contacto div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #00283A;
+    border-radius: 10px;
+    height: 200px;
+    width: 350px;
+    margin: 10px;
+}
+
+h1, p{
+    margin: 0;
+    padding: 5px 15px;
+}
+
+.formulario{
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form1{
+    display: inline-block;
+    background-color:#00283A;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 200px;
+}
+
+.persona{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.contacto h1, p, i{
-    padding: 5px;
+.persona div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0 0 0;
+}
+
+.persona label{
+    display: inline-block;
+    width: 60px;
+}
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+}
+
+.consulta label{
+    margin: 10px 0 0;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario div > h1, p{
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.extra > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items:baseline;
+    margin: 5px;
+}
+
+.extra div label{
+    margin: 0 5px 0 0;
+}
+
+.consulta div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.consulta > div > div{
+    display: flex;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+.consulta > div > div > label{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 640px){
+    .consulta > div > div{
+        margin: 10px 0;
+    }
+    .slider::before{
+        display: none;
+    }
+    .slider::after{
+        display: none;
+    }
+    .input{
+        flex-direction: column;
+    }
+}
+
+.consulta span{
+    display: inline-block;
+    margin: 0 5px;
+    color: grey;
+    font-weight: bold;
+}
+
+.slider::before{
+    color: grey;
+    font-weight: bold;
+    content: "baja";
+}
+
+.slider::after{
+    color: grey;
+    font-weight: bold;
+    content: "alta";
+}
+
+form > div{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form > div input{
+    margin-right: 5px;
+}
+
+.slider{
+    display: block;
 }
