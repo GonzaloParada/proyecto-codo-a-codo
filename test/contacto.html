@@ -52,7 +52,107 @@
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main>
+    <section class="contacto">
+      <div>
+        <h1>Contactanos!</h1>
+        <p>TEL: 3794 345385</p>
+        <i class="fa-solid fa-phone fa-3x"></i>
+      </div>
+      <div>
+        <h1>Encuentranos en <br> nuestras redes sociales!</h1>
+        <p>burguer@instagram.com</p>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <div>
+        <h1>Dejanos un mail!</h1>
+        <p>burguer@email.com</p>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+    </section>
+    <section class="formulario">
+      <div>
+        <h1 class="titulo-formulario">Realiza una consulta!</h1>
+        <p>Ante cualquier duda, puedes enviarnos tu consulta!</p>
+      </div>
+      <div class="form1">
+        <form id="form" action="https://formspree.io/f/xaykdkkv" method="POST" class="form">
+          <fieldset class="persona">
+            <legend>Datos personales</legend>
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div>
+              <label for="apellido">Apellido</label>
+              <input type="text" name="apellido" id="apellido" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" required>
+            </div>
+            <div>
+              <label for="tel">Telefono</label>
+              <input type="tel" name="tel" id="tel">
+            </div>
+          </fieldset>
+          <fieldset class="consulta">
+            <legend>Consulta</legend>
+            <div>
+              <div>
+                <label for="fecha">fecha de consulta</label>
+                <input for="fecha" type="date" name="fecha">
+              </div>
+              <div>
+                <label for="urgencia">Urgencia de la consulta</label>
+                <div class="slider"><input type="range" name="urgencia" id="urgencia"></div>
+              </div>
+            </div>
+            <label for="con">Escriba aqui su consulta</label>
+            <textarea name="con" id="con" cols="5" rows="5"></textarea>
+          </fieldset>
+          <fieldset class="extra">
+            <legend>Encuesta de calidad (opcional)</legend>
+            <div>
+              <label for="servicios">Como calificaria nuestros servicios?</label>
+              <div class="input">
+                <div><input type="radio" name="servicios" id="servicios" value="Bueno">Bueno</div>
+                <div><input type="radio" name="servicios" id="servicios" value="Mediano">Mediano</div>
+                <div><input type="radio" name="servicios" id="servicios" value="Malo">Malo</div>
+              </div>
+            </div>
+            <div>
+              <label for="difusion">A traves de que medios se ha enterado de nosotros?</label>
+              <div class="input">
+                <div><input type="checkbox" name="difusion" id="difusion" value="Radio">Radio</div>
+                <div><input type="checkbox" name="difusion" id="difusion" value="TV">TV</div>
+                <div><input type="checkbox" name="difusion" id="difusion" value="Internet">Internet</div>
+                <div><input type="checkbox" name="difusion" id="difusion" value="Redes sociales">Redes sociales</div>
+              </div>
+            </div>
+            <div>
+              <label for="consumo">En que horario suele consumir nuestros productos?</label>
+              <select name="consumo" id="consumo">
+                <option value="Mañana">Mañana</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noche">Noche</option>
+            </div>
+            </select>
+          </fieldset>
+          <div>
+            <input class="btn-form btn-form-enviar" type="submit" value="enviar">
+            <input class="btn-form btn-form-borrar" type="reset" value="borrar">
+          </div>
+        </form>
+        <a class="ancor-form" href="mailto:gonzaparada96@gmail.com" id="form"></a>
+      </div>
+    </section>
+
+    <div class="submit-card">
+      <img class="ok-icono" src="./Resources/Images/iconos/ok.png" alt="">
+      <h2>Tu menaje se ha enviado con exito!</h2>
+    </div>
+  </main>
   <footer>
     <div class="flex-container footer">
       <img class="logo" src="./Resources/Images/image2.png" alt="logo de hamburguesa" />
@@ -64,6 +164,7 @@
     </div>
   </footer>
   <script src="./js/index.js"></script>
+  <script src="./js/contacto.js"></script>
 </body>
 
 </html>
