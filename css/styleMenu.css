@@ -134,3 +134,15 @@
 .nombre-filtro {
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 800px){
+  .filter-container {
+    gap: 10px;
+  }
+  .filter-option img {
+    width: 50%;
+  }
+  .filter-option p {
+    font-size: 10px;
+  }
+}
