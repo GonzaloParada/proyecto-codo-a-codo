@@ -1,0 +1,279 @@
+.contact{
+    color: #F9F871;
+}
+
+main {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contacto{
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-image: url("../Resources/Images/contacto-img.png");
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 450px;
+    gap: 20px;
+    width: 100%;
+}
+
+.contacto div{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #00283A;
+    border-radius: 10px;
+    height: 250px;
+    width: 400px;
+    margin: 10px;
+    gap: 15px;
+}
+
+.contacto h1 {
+    margin: 0;
+    padding: 5px 15px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.contacto p {
+    font-size: 18px;
+}
+
+.contacto i {
+    font-size: 35px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.titulo-formulario{
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.form1{
+    display: inline-block;
+    background-color:#00283A;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    width: 90%;
+}
+
+#form{
+    min-height: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+}
+.persona{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.persona div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px 0 0 0;
+    gap: 10px;
+}
+
+.persona label{
+    display: inline-block;
+    width: 60px;
+}
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+}
+
+.consulta label{
+    margin: 10px 0 0;
+}
+
+.extra{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario div > h1, p{
+    text-align: center;
+}
+
+.input{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.extra > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:flex-start;
+    align-items:baseline;
+    margin: 5px;
+}
+
+.extra div label{
+    margin: 0 5px 0 0;
+}
+
+.consulta div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.consulta > div > div{
+    display: flex;
+    align-items:baseline;
+    flex-wrap: wrap;
+}
+
+textarea{
+    resize: none;
+}
+
+
+.consulta > div > div > label{
+    margin-right: 5px;
+}
+
+.btn-form{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: opacity .5s;
+}
+.btn-form-enviar{
+    background-color: rgb(59, 136, 59);
+    color: white;    
+}
+.btn-form-borrar{
+    background-color: rgb(255, 46, 46);
+    color: white;    
+}
+
+.btn-form:hover{
+    opacity: 0.7;
+    outline: 1px solid #ffff6679;
+
+}
+
+/* mensaje que se ha enviado correctamente el formulario */
+
+.submit-card{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+    max-width: 400px;
+    height: 300px;
+    border: 4px solid #4ECB71;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    position: fixed;
+    top: 20%;
+  
+  }
+  
+  .submit-card h2{
+    font-family: var(--font-2);
+    height: 25px;
+    color: rgb(54, 54, 54);
+    text-align: center;
+  }
+  
+  .ok-icono{
+    width: 75px;
+    height: 75px;
+  }
+
+  .ancor-form{
+    position: absolute;
+  }
+
+@media screen and (max-width: 640px){
+    .consulta > div > div{
+        margin: 10px 0;
+    }
+    .slider::before{
+        display: none;
+    }
+    .slider::after{
+        display: none;
+    }
+    .input{
+        flex-direction: column;
+    }
+}
+
+.consulta span{
+    display: inline-block;
+    margin: 0 5px;
+    color: grey;
+    font-weight: bold;
+}
+
+.slider::before{
+    color: grey;
+    font-weight: bold;
+    content: "baja";
+}
+
+.slider::after{
+    color: grey;
+    font-weight: bold;
+    content: "alta";
+}
+
+form > div{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form > div input{
+    margin-right: 5px;
+}
+
+.slider{
+    display: block;
+}
