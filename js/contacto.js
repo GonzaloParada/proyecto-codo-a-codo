@@ -1,4 +1,3 @@
-let inputNombre = document.querySelector("#nombre");
 let inputMail = document.querySelector("#email");
 let submitCard = document.querySelector(".submit-card");
 
@@ -30,18 +29,8 @@ async function handleSubmit(event) {
 }
 
 function validacion() {
-  // VALIDACION NOMBRE
-  let valorNombre = inputNombre.value;
-  if (valorNombre == null || valorNombre.length == 0) {
-    let elemento = document.getElementById('nombre');
-    elemento.focus();
-    alert("Ingrese Nombre valido!!");
-    return false;
-  }
-
   // VALIDACION EMAIL
   let valorMail = inputMail.value;
-
   if (!(/^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail)\.(?:|com|ar)+$/.test(valorMail))) {
     //document.getElementById('mensaje').innerHTML = "No es una direccion de email correcta" ;        
     let elementoMail = document.getElementById('email');
@@ -50,10 +39,8 @@ function validacion() {
     alert("Ingrese Email valido!!");
     return false;
   }
-
   return true;
 }
-
 
 function mostrarModalSubmit() {
   submitCard.style.display = "flex";

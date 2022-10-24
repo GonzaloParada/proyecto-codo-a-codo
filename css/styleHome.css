@@ -9,14 +9,18 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 30px;
+
 }
 .anuncio div {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .anuncio h1 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: 2px;
 }
 
@@ -49,10 +53,11 @@
     width: 300px;
     height: 70px;
     transition: 1s;
+    font-size: 20px;
+    font-weight: 600px;
 }
 
 .btn-comprar a {
-    font-size: 40px;
     color: white;
     text-decoration: none;
 }
@@ -79,9 +84,13 @@
 .promo-container {
     margin: 50px 0px;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
+}
+
+.combo{
+    width: 400px;
 }
 
 .promo-container img {
@@ -102,20 +111,55 @@
     background-color: #0d76a3a9;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: 1s ease;
 }
 
-.combo a img {
+.combo:hover{
+    transform: scale(1.2, 1.2);
+}
+
+.combo img {  
     border-radius: 5px;
 }
 
+.combo {
+    text-align: center;
+}
+
 @media screen and (max-width: 1100px){
+    main {
+        padding: 0;
+    }
+    .anuncio h1 {
+        padding: 0 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .combo{
+        width:80%;
+    }
+
     .anuncio {
         flex-direction: column;
     }
     .anuncio div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         width: 90%;
+    }
+    .anuncio-descripcion {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    .btn-comprar {
+        font-size: 18px;
     }
     .anuncio-imagen {
         width: 70%;
+    }
+    .promo-container{
+        padding-bottom: 50px;
     }
 }
