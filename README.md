@@ -14,7 +14,7 @@ Gonzalo Parada y Julian Correa
 
 https://gonzaloparada.github.io/proyecto-codo-a-codo/
 
-## Requisitosplanteados que deberá cumplir el proyecto:
+## Requisitos planteados que deberá cumplir el proyecto:
 - Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio
 Web estilo One Page, el mismo deberá tener al menos 5 secciones.
 - Utilizar etiquetas semánticas para estructurar el sitio.
